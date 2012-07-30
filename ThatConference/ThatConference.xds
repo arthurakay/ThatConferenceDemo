@@ -1,0 +1,54 @@
+{
+    "name": "ThatConference",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": "",
+        "extPath": "sencha-touch-2.0.1/",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "lineEnding": "LF",
+        "instantiateStore": true,
+        "genTimestamps": false,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "mapsAPI": ""
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": "442",
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "e729f023-7d95-4612-a31f-e06a6c0a40eb": {
+            "paths": [
+                "metadata/view/MyNavigationView",
+                "app/view/override/MyNavigationView.js",
+                "app/view/MyNavigationView.js"
+            ],
+            "className": "MyNavigationView"
+        },
+        "7ae8d723-5cb1-4145-9e60-964ce2b5ccb4": {
+            "paths": [
+                "metadata/store/Attendees",
+                "app/store/override/Attendees.js",
+                "app/store/Attendees.js"
+            ],
+            "className": "Attendees"
+        },
+        "62a190a7-61c8-411d-87ae-5cd310279af4": {
+            "paths": [
+                "metadata/model/Developer",
+                "app/model/override/Developer.js",
+                "app/model/Developer.js"
+            ],
+            "className": "Developer"
+        }
+    },
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true
+    }
+}

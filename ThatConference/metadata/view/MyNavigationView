@@ -1,0 +1,58 @@
+{
+    "id": "ExtBox1-ext-gen2305",
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MyNavigationView"
+    },
+    "customConfigs": [],
+    "designerId": "e729f023-7d95-4612-a31f-e06a6c0a40eb",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen2497",
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "AttendeeList",
+                "itemTpl": "<div>{name}</div>",
+                "store": "Attendees",
+                "designer|userClassName": "MyList",
+                "title": "ThatConference 2012"
+            },
+            "customConfigs": [],
+            "expanded": true,
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4635",
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAttendeeListItemTap",
+                        "implHandler": [
+                            "console.log(record.get('name'));"
+                        ],
+                        "name": "itemtap",
+                        "designer|userClassName": "onAttendeeListItemTap"
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                }
+            ]
+        }
+    ]
+}
