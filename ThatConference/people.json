@@ -1,0 +1,16 @@
+{
+    "people" : [
+        {
+            "id"   : 1,
+            "name" : "Arthur Kay"
+        },
+        {
+            "id"   : 2,
+            "name" : "Foo Bar"
+        },
+        {
+            "id"   : 3,
+            "name" : "Clark Sell"
+        }
+    ]
+}

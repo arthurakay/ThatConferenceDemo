@@ -1,0 +1,69 @@
+{
+    "id": "ExtBox1-ext-gen3238",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "App"
+    },
+    "customConfigs": [],
+    "designerId": "a437626e-9e7d-4c62-a1a1-cb2d3c171923",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen4705",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "showList",
+                "implHandler": [
+                    "var navView = img.up('navigationview');",
+                    "var list = Ext.create('ThatConference.view.AttendeeList');",
+                    "",
+                    "navView.push(list);",
+                    "list.down('list').getStore().load();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Img",
+                "designer|controlQuery": "img#logo",
+                "designer|userClassName": "showList"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen6767",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "pickWinner",
+                "implHandler": [
+                    "var store = Ext.data.StoreManager.lookup('Attendees');",
+                    "",
+                    "var index = Math.floor(Math.random() * store.getCount());",
+                    "var winner = store.getAt(index);",
+                    "",
+                    "Ext.Msg.alert('The winner...', winner.get('name'));"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#pickWinner",
+                "designer|userClassName": "pickWinner"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
